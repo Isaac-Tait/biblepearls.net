@@ -7,24 +7,7 @@ Bible verse of the day
 
 [![Screenshot](./images/screenshot.png)](http://www.biblepearls.net)
 
-#### Install
-
-```
-yarn install
-```
-
-#### Develop
-
-```
-yarn start
-```
-
-#### Build
-
-```
-yarn build
-```
-
+Utilizing Bible.api https://docs.api.bible/docs/verse-of-the-day
 
 ## Licence
 

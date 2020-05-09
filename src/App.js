@@ -13,7 +13,7 @@ class App extends Component {
 		const randomChapter = Math.floor(Math.random() * 30) + 1;
 		const randomVerse = Math.floor(Math.random() * 20) + 1;
 	  const query = `%7B%0A%20%20passage(reference%3A%20%22Prov%20${randomChapter}%3A${randomVerse}%22)%20%7B%0A%20%20%20%20verses%20%7B%0A%20%20%20%20%20%20text%2C%0A%20%20%20%20%20%20book%2C%0A%20%20%20%20%20%20chapter%2C%0A%20%20%20%20%20%20verse%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D`;
-		const url = `http://bibleapi.ws/graphql?query=${query}`;
+		const url = `http://cdn.scripture.api.bible/fums/fumsv2.min.js`;
 
 		fetch(url)
 			.then(response => response.json()

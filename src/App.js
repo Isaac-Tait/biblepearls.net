@@ -10,6 +10,7 @@ class App extends Component {
 	}
 
 	componentWillMount() {
+		require('dotenv').config()
 		const API_KEY = ``; //! Fill in with your own key.
 		const verseIndex = Math.floor(Math.random() * VERSES.length); //! New API params
 		const verseID = VERSES[verseIndex]; //! New API params

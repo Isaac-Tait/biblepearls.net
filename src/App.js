@@ -13,7 +13,7 @@ class App extends Component {
 		require('dotenv').config()
 		const db = require('db') 
 			db.connect({
-				API_KEY: REACT_APP_API_KEY
+				API_KEY: process.env.REACT_APP_API_KEY
 			})
 		const verseIndex = Math.floor(Math.random() * VERSES.length); //! New API params
 		const verseID = VERSES[verseIndex]; //! New API params
